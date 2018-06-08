@@ -1,0 +1,3 @@
+#!/bin/bash
+curl https://releases.rancher.com/install-docker/${docker_version_agent}.sh | sh
+docker pull rancher/rancher-agent:${rancher_version}

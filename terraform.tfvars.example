@@ -1,0 +1,22 @@
+# Region where resources should be created
+region = "eu-west-3"
+# Resources will be prefixed with this to avoid clashing names
+prefix = "myname"
+# CIDR block to use in VPC
+cidr_block = "10.200.100.0/24"
+# rancher/rancher image tag to use
+rancher_version = "v2.0.2"
+# Instance size to use
+instance_size = "t2.medium"
+# Key name to use to access the instances
+key_name = "yourkeyname"
+# Docker version of host running `rancher/rancher`
+docker_version_server = "17.03"
+# Docker version of host being added to a cluster (running `rancher/rancher-agent`)
+docker_version_agent = "17.03"
+# Count of etcd nodes to create
+count_etcd_nodes = "1"
+# Count of controlplane nodes to create
+count_controlplane_nodes = "1"
+# Count of worker nodes to create
+count_worker_nodes = "1"

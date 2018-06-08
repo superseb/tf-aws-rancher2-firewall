@@ -1,0 +1,3 @@
+#!/bin/bash
+curl https://releases.rancher.com/install-docker/${docker_version_server}.sh | sh
+docker run -d -p 80:80 -p 443:443 rancher/rancher:${rancher_version}
